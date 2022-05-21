@@ -31,4 +31,4 @@ RUN chmod +755 /entrypoint.sh
 EXPOSE 27015/udp
 EXPOSE 27016/udp
 
-ENTRYPOINT [ "/entrypoint.sh" ]
+# ENTRYPOINT [ "/entrypoint.sh" ]
