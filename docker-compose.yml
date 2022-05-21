@@ -1,0 +1,11 @@
+version: '3'
+services:
+  vrising:
+    image: ghcr.io/f0rkz/docker-vrising:latest
+    ports:
+      - 27015:27015/udp
+      - 27016:27016/udp
+    volumes:
+      - ./data:/root/.wine/drive_c/VRisingServer/
+    environment:
+      SERVER_NAME: docker-vrising
